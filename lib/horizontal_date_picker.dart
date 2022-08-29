@@ -130,7 +130,7 @@ class _HorizontalDatePickerWidgetState
   @override
   void initState() {
     super.initState();
-    WidgetsBinding.instance?.addPostFrameCallback((_) {
+    WidgetsBinding.instance.addPostFrameCallback((_) {
       widget.datePickerController.scrollToSelectedItem();
     });
   }
